@@ -6,7 +6,7 @@
 
 Автор пишет статью
 
-![a]()
+![a](https://github.com/petiteprincesse/MaksimovaOlga.github.io/blob/master/lab1/01_A0.png?raw=true)
 
 Автор должен писать статьи в соответстствии с планом публикаций, пользуясь источниками и ПО MS Office.
 
