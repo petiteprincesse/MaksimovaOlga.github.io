@@ -1,0 +1,12 @@
+@startuml
+skinparam class {
+	BackgroundColor White
+	ArrowColor Black
+	BorderColor Black
+}
+class "Автор" as P {
+ ПО MS Office
+Написать (Источник, План публикаций) -> Статья
+}
+hide circle
+@enduml
