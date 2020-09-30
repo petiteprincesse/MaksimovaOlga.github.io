@@ -12,7 +12,7 @@
 
 Диаграмма классов
 
-![диаграмма классов]()
+![диаграмма классов](https://github.com/petiteprincesse/MaksimovaOlga.github.io/blob/master/lab1/uml-class.png?raw=true)
 
 Диаграмма прецедентов
 
