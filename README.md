@@ -4,7 +4,7 @@
 
 # [Лабораторная 1](https://github.com/stankin/design-part-1/wiki/lab1). Знакомство с основными инструментами и нотациями 
 
-_Предложение:_ Автор пишет статью
+_Предложение:_ Автор пишет статью.
 
 ![a](https://github.com/petiteprincesse/MaksimovaOlga.github.io/blob/master/lab1/01_A0.png?raw=true)
 
