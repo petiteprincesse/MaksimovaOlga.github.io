@@ -1,4 +1,4 @@
-# Отчет о лабораторных работах [2](https://github.com/stankin/design-part-1/wiki/lab2),[3](https://github.com/stankin/design-part-1/wiki/lab3)
+# Отчет о лабораторных работах 1, 2, 3.
 
 # студентка группы [ИДБ-17-06](https://github.com/stankin/design-part-1/wiki/list-idb-17-06) [Максимова О.В](https://github.com/petiteprincesse/MaksimovaOlga.github.io)
 
@@ -24,16 +24,30 @@ _Предложение:_ Автор должен писать статьи в �
 
 # [Лабораторная 2](https://github.com/stankin/design-part-1/wiki/lab2). Определение подсистемы и надсистемы
 
+_IDF0-диаграмма:_ Процесс "Получить права"
 
 ![a](https://github.com/petiteprincesse/MaksimovaOlga.github.io/blob/master/lab2/%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C1.png?raw=true)
 
+_Уровень ниже:_
+
 ![a](https://github.com/petiteprincesse/MaksimovaOlga.github.io/blob/master/lab2/%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C2.png?raw=true)
 
-![a](https://github.com/petiteprincesse/MaksimovaOlga.github.io/blob/master/lab2/%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B53.png?raw=true)
+_DFD "Заключение договора"_
 
+![a](https://github.com/petiteprincesse/MaksimovaOlga.github.io/blob/master/lab2/%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B53.png?raw=true)
 
 ### Usecase diagram
 
 [Текст](https://github.com/petiteprincesse/MaksimovaOlga.github.io/blob/master/lab2/UseCase.txt) и [рисунок](https://github.com/petiteprincesse/MaksimovaOlga.github.io/blob/master/lab2/UseCase.png) диаграммы прецедентов
 
 ![прецедентов](https://github.com/petiteprincesse/MaksimovaOlga.github.io/blob/master/lab2/UseCase.png?raw=true)
+
+# [Лабораторная 3](https://github.com/stankin/design-part-1/wiki/lab3). Определение способов существования информации
+
+# Отчет о лабораторных работах 4, 5.
+
+# [Лабораторная 4]().  
+
+# [Лабораторная 5]().
+
+
