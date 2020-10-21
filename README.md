@@ -8,5 +8,5 @@
 
 ## [Отчет](https://github.com/petiteprincesse/MaksimovaOlga.github.io/wiki/%D0%9E%D1%82%D1%87%D0%B5%D1%82-%D0%BE-%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D1%85-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%85-%E2%84%964,-5.) о лабораторных работах 4, 5.
 
-## Рефераты: [разработанный](https://github.com/stankin/design-part-1/wiki/exam02-6) и [проверенный]()
+## Рефераты: [разработанный](https://github.com/stankin/design-part-1/wiki/exam02-6) и [проверенный](https://github.com/stankin/design-part-1/wiki/exam01-1)
 
