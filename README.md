@@ -44,6 +44,18 @@ _DFD "Заключение договора"_:
 
 ## [Лабораторная 3](https://github.com/stankin/design-part-1/wiki/lab3). Определение способов существования информации
 
+### Диаграмма последовательности:
+
+[Текст](https://github.com/petiteprincesse/MaksimovaOlga.github.io/blob/master/lab3/uml.txt) и [рисунок](https://github.com/petiteprincesse/MaksimovaOlga.github.io/blob/master/lab3/uml.png) диаграммы последовательности
+
+![диаграмма последовательности](https://github.com/petiteprincesse/MaksimovaOlga.github.io/blob/master/lab3/uml.png?raw=true)
+
+### ER-диаграмма:
+
+[Текст](https://github.com/petiteprincesse/MaksimovaOlga.github.io/blob/master/lab3/schema.txt) и [рисунок](https://github.com/petiteprincesse/MaksimovaOlga.github.io/blob/master/lab3/schema.png) классов
+
+![ER-диаграмма](https://github.com/petiteprincesse/MaksimovaOlga.github.io/blob/master/lab3/schema.png?raw=true)
+
 # Отчет о лабораторных работах 4, 5.
 
 ## [Лабораторная 4]().  
