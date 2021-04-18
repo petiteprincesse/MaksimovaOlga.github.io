@@ -1,0 +1,69 @@
+@startuml
+skinparam actor {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam usecase {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+left to right direction
+
+actor "Руководитель"
+
+"Отслеживание ДДС (Движения Денежных Средств)" as (Use1)
+"Отслеживание ценовой динамики" as (Use2)
+"Отслеживание динамики востребованности товаров" as (Use3)
+"Отслеживание состояния счета" as (Use4)
+"Обсуждение ситуации в рабочем чате" as (Use5)
+
+
+
+
+
+usecase Use6 as "Расход на заказы поставок"
+usecase Use7 as "Доход от продажи"
+usecase Use8 as "Общая табличка"
+
+usecase Use9 as "Динамика расценок на поставляемые детали"
+usecase Use10 as "Динамика стоимости единиц товара"
+
+usecase Use11 as "Рейтинговая таблица товаров (помесячно)"
+usecase Use12 as "График продаж товаров (помесячно)"
+
+usecase Use13 as "Счет с выбором валют (рубль, доллар, евро)"
+usecase Use14 as "Состояние счета относительно плана"
+usecase Use15 as "Графики курса валют (доллар, евро)"
+
+usecase Use16 as "Общий чат"
+usecase Use17 as "Комнаты"
+
+Руководитель ---> (Use1)
+Руководитель ---> (Use2)
+Руководитель ---> (Use3)
+Руководитель ---> (Use4)
+Руководитель ---> (Use5)
+
+(Use1) ..> (Use6)
+(Use1) ..> (Use7)
+(Use1) ..> (Use8)
+
+(Use2) ..> (Use9)
+(Use2) ..> (Use10)
+
+(Use3) ..> (Use11)
+(Use3) ..> (Use12)
+
+(Use4) ..> (Use13)
+(Use4) ..> (Use14)
+(Use4) ..> (Use15)
+
+(Use5) ..> (Use16)
+(Use5) ..> (Use17)
+@enduml
+
+http://www.plantuml.com/plantuml/png/fCmn3i8m34RXtQVmKI0SWjbAJ6irZT5lHmo8krE9fJlhfwTtYHJat3l5PkCfa9sbfeFVLAHk2toETlD-o7srLBe2_lf1wKT1nT4KP_dGwJP3guJ--UlwI4vdsB8cDuFMD1z4tyQg9ZTj80hlESN8AooLAEQ799kgb-W1AZNRRd810mseSbGMPTL5LMumIPd6sD1UuRqRvNip4yTZ2-GWOkQRxttplHy6PpQYtxoWWlxH4zuxodbEXaf-Y7gzY7xnd6TK0lbBEHYQZdWQHHkyjgfF6u0vDeriy5esvAFmZvpnlQ8jfrZkU0RXfpXId-vK_-FTRHAVaUUbg7XFUoMsiDHqmBEWl18PdX5fHIbH4nlMq2EK7VVeK11uxa0GyAnE6PsrEdFX-B_sDS1oHGQGhYJ6Le8UiRM0m8vC5IuL1wXv2K1CAXolnP-eq47XeQKfbTWaxjc_r_a0D9Kzj1BC6TzB8vMahkWPKWNUpvmf-k-jQblN8gehN3c53IWk7X_c2E5KLgGbxI3WsWL8Kjz8IzfpQxj4GYivCmeStdZze2TQSeNbgj-5inquBNajTU3CzTHOk6ouIIvFwDlMO76ekap6JqREothB6uQJnDSK_3re4l77aSDabwGRawFwaW2ED3XopIj9BGxj3ftu3vl_Lp4RrBgROA0uSefRDtj87AF4cPsZL6AnbBhnTspsEUM5sEU7TwWfjakyS1XM1c5fo-_OguV3JgOsx7PYtBVfxHQHDJ8JTUbBA3ff5K7QK_22KsZemF59bu7Yj3wKEUtzboSyre_wJrlHe-np1frJ5w4Q30Rl_PtLWJJiGXfr8OsxaEGoSDxKnOM3fd4JkMeXrpvi-0RTn4qakVIiKGrBuXOqzBHn3Hl5BMZSXbxTJshOD6v1yF_Xzijd_DY-0000
