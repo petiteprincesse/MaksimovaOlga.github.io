@@ -13,17 +13,13 @@ BorderColor Black
 
 left to right direction
 
-actor "Руководитель"
+actor "Пользователь"
 
 "Отслеживание ДДС (Движения Денежных Средств)" as (Use1)
 "Отслеживание ценовой динамики" as (Use2)
 "Отслеживание динамики востребованности товаров" as (Use3)
 "Отслеживание состояния счета" as (Use4)
 "Обсуждение ситуации в рабочем чате" as (Use5)
-
-
-
-
 
 usecase Use6 as "Расход на заказы поставок"
 usecase Use7 as "Доход от продажи"
@@ -42,11 +38,11 @@ usecase Use15 as "Графики курса валют (доллар, евро)"
 usecase Use16 as "Общий чат"
 usecase Use17 as "Комнаты"
 
-Руководитель ---> (Use1)
-Руководитель ---> (Use2)
-Руководитель ---> (Use3)
-Руководитель ---> (Use4)
-Руководитель ---> (Use5)
+Пользователь ---> (Use1)
+Пользователь ---> (Use2)
+Пользователь ---> (Use3)
+Пользователь ---> (Use4)
+Пользователь ---> (Use5)
 
 (Use1) ..> (Use6)
 (Use1) ..> (Use7)
@@ -66,4 +62,4 @@ usecase Use17 as "Комнаты"
 (Use5) ..> (Use17)
 @enduml
 
-http://www.plantuml.com/plantuml/png/fCmn3i8m34RXtQVmKI0SWjbAJ6irZT5lHmo8krE9fJlhfwTtYHJat3l5PkCfa9sbfeFVLAHk2toETlD-o7srLBe2_lf1wKT1nT4KP_dGwJP3guJ--UlwI4vdsB8cDuFMD1z4tyQg9ZTj80hlESN8AooLAEQ799kgb-W1AZNRRd810mseSbGMPTL5LMumIPd6sD1UuRqRvNip4yTZ2-GWOkQRxttplHy6PpQYtxoWWlxH4zuxodbEXaf-Y7gzY7xnd6TK0lbBEHYQZdWQHHkyjgfF6u0vDeriy5esvAFmZvpnlQ8jfrZkU0RXfpXId-vK_-FTRHAVaUUbg7XFUoMsiDHqmBEWl18PdX5fHIbH4nlMq2EK7VVeK11uxa0GyAnE6PsrEdFX-B_sDS1oHGQGhYJ6Le8UiRM0m8vC5IuL1wXv2K1CAXolnP-eq47XeQKfbTWaxjc_r_a0D9Kzj1BC6TzB8vMahkWPKWNUpvmf-k-jQblN8gehN3c53IWk7X_c2E5KLgGbxI3WsWL8Kjz8IzfpQxj4GYivCmeStdZze2TQSeNbgj-5inquBNajTU3CzTHOk6ouIIvFwDlMO76ekap6JqREothB6uQJnDSK_3re4l77aSDabwGRawFwaW2ED3XopIj9BGxj3ftu3vl_Lp4RrBgROA0uSefRDtj87AF4cPsZL6AnbBhnTspsEUM5sEU7TwWfjakyS1XM1c5fo-_OguV3JgOsx7PYtBVfxHQHDJ8JTUbBA3ff5K7QK_22KsZemF59bu7Yj3wKEUtzboSyre_wJrlHe-np1frJ5w4Q30Rl_PtLWJJiGXfr8OsxaEGoSDxKnOM3fd4JkMeXrpvi-0RTn4qakVIiKGrBuXOqzBHn3Hl5BMZSXbxTJshOD6v1yF_Xzijd_DY-0000
+http://www.plantuml.com/plantuml/png/fCmn3i8m34RXtQVmKI0SWjbAJ6irZT5lHmo8krE9fJlhfwTtYHJat3l5PkCfa9sbfeFVLAHk2toETlD-o7srLBe2_lf1wKT1nT4KP_dGwJP3guJ--UlwI4vdsB8cDuFMD1z4tyQg9ZTjA0ZlESMJLrWgKGo699kgb-W1AZNRRd810mseSbGMPTL5MsxWfBWO6xTNcBbHl_6yk7vsWon4dkURcUzzynEZOZtwJh-fu0Swu7oYX1UKYkqD1XvzumNFgG3oYpBnKeapDRJ5PsU6j0MOmPcAWpVYa4U9BpdcUqCxZc3kUGxY9zypx-xCyEtTRU2VeUULi8WUV8-6za1BU4yuSyfgal4PaawM4JQHKGbw1BF6beeYW1SA8W1dVSlahDIvfkFlnlO0vffIG4bD4LOKz0ZN4WHxqDJf6PYNk7G5G4GQN9-8Fc6Xay5H3QKcc_g3mVDkm9m9xj4FIi1-3-Lx8sKREe0cn_V0iQ4_AXEcz3JtcWnNoh15YERZOO4KZiH22afs4gubGGlwH0bA1h58Bb3CMkxq78Ktbj-PHu8wHN8zwrnbEqeBtaWFEDPvfXLSjDG4b__drx70EDKJ1fbkHSQhnhZRWeF0zXJnHqb4nayDTejTKTBQ6ZEK0d1bYYitl9RIV5VkMCc_LFL_5B5Eh_iHEemJPTpftg5mh177rGv5aWjJ-iQVuHnon4kHpm-lq5Eu2tnm6QmKQL57RsZPtKMdjB7erSQ8CjrdVOE8ZSg4NURYaauxJP3nvBpa21o9e_X5bGxZhBcK6HtjFuvxhLtrhrL7I_5p39wNNe9cD1gzjk-h7a7ZFa6JFa5Xdo1v4QWsSt6XqCnl8rSTvDgcZVz1DtuR2IvjrAI11Nu76jkmi85D_0uKTg5dzTC6DlCx4FI_kVtm7Z-qVm40

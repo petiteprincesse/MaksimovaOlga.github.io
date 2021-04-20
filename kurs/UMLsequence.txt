@@ -1,0 +1,61 @@
+@startuml
+skinparam actor {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam boundary {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam entity {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam database {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+ 
+skinparam component {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam sequence {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+LifeLineBorderColor Black
+}
+
+actor "Пользователь" as user
+boundary "Приложение" as app
+entity "Сервер" as server
+database "БД" as database
+
+user -> app : Попытка изменения данных
+app -> server : POST-запрос
+server -> database : Запрос на обновление информации
+server <- database : Статус запроса 
+server -> database : Запрос на получение информации
+server <- database : Получение актуальной информации
+app <- server : GET-запрос
+user <- app : Получение обновленной информации
+
+user -> app : Попытка получения таблиц ДДС/графиков динамики/результирующего отчета
+app -> server : POST-запрос
+server -> database : Запрос на получение информации
+server <- database : Получение актуальной информации
+app <- server : GET-запрос
+user <- app : Получение сгенерированных таблиц ДДС/графиков динамики/файла результирующего отчета
+@enduml
+
+http://www.plantuml.com/plantuml/png/vPNVYjD05CRlvoc6lIzxBo9hHRnPK53mUZOPDMoRn4cYY0XHrnLH5671owLlCBR6fat_lCAPD_ARXBIn5gjjxvP2apdpdTztvfmfFOfYeUAass7HgUU7Geak5quSAFwIjOLp-bW5YU_U2Zg8F7pYnPBTL2fuNWNQ7IXOEr2kLCt8AzQWdLY0K2_s1fH-xCNxmxaY5YSYahi1UOFe1Dqmy57ctcgCvDD4-ivEDHvxZ-InvykrLjN83-YIPbIOJpJ4iq_QlA7ChW-uY7WIISKMquJMf9HJ0ULFgAPupqgT24DMpGYY7cMGzUrtkGd6Cs3gfaFnbIxAdJh4c3NYhHiMnA_nigQv-OXQngGvR8OqiOQLgVd2wGTfl4wXUSTi4d8h7wJVktl_GGif6eoKPkOrgxOWMbXQbszB1GTCSxX-nuljGr6V3-wmEOCeHGtQd6ETry3hhT-0FHIC1fgt03RzWVxd4kPs722ytwQ0op-JDOrjHNXYgENXHkk9w29mooxUkRtIn2Ig325SxxNQlh-uRPhuIXSmSUneu0iipZbTuDCxf06O6kmSMR2rrm9c44xAK7w8_Oo6E3uE3q9kKa0_cm-83cY6Yj4RU5Zuvcjq5MQ8opee5naoq2xRrkLFRTifd64nGfRc_pEG8-cx-9lw1G00

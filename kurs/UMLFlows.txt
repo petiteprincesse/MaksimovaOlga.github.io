@@ -1,0 +1,65 @@
+@startuml
+skinparam class {
+	BackgroundColor White
+	ArrowColor Black
+	BorderColor Black
+}
+class Flow as "Поток"
+
+class In as "Входной"
+class Out as "Выходной"
+class Management as "Управления"
+
+class Info_1 as "Информационный"
+class Info_2 as "Информационный"
+class Material_2 as "Материальный"
+class Info_3 as "Информационный"
+class Material_3 as "Материальный"
+
+class Report as "Отчетные данные"
+
+class InExTab as "Таблицы ДДС"
+class InExGraph as "Графики для аналитики динамики"
+class PrintRep as "Напечатанный отчет по динамике"
+
+class SD as "Спрос покупателей, предложения поставщиков"
+class Bandwidth as "Ресурсы предприятия"
+class Aims as "Цели предприятия"
+
+class Support as "Поддержка ПО, состояние облачной БД"
+class ServerCond as "Состояние сервера"
+
+
+Flow<|-- In
+Flow<|-- Out
+Flow<|-- Management
+
+In<|-- Info_1
+
+Out<|-- Info_2
+Out<|-- Material_2
+
+Management<|-- Info_3
+Management<|-- Material_3
+
+Info_1<|-- Report
+
+Info_2<|-- InExTab
+Info_2<|-- InExGraph
+ 
+Material_2<|-- PrintRep
+
+Info_3<|-- Aims
+Info_3<|-- SD
+Info_3<|-- Support
+
+Material_3<|-- Bandwidth
+Material_3<|-- SD
+Material_3<|-- ServerCond
+
+hide members
+hide circle
+hide methods
+@enduml
+
+http://www.plantuml.com/plantuml/png/bLFBJXH155rJNr6PDInajYu07uO5qQY9IrDCbqo7VaogUyH4JM1GY1cJYSh2XO9euhgTqAGPc9vVkFL7tdfKgZF1g24ffiuvz_Ij-rZ9SYRoVXoHR3jCUaomc7OYbcNq9LbOOvtjBP7sa-1M6gM2Fkc6EISBgqAaEmPPYr22mbG4N3IXryIut8tI7Seose8JgEK0QfYqYENM4yDyb6yHFuCfdXSjIzxlvuuTNiTli8HjyPWdLlO3Pd8N2XZ39PGehUIeyQ5dwTCRHlSPfl8DrAYzWa8UG8McKyI6pjhAb_zPli5oBa8MkP0lA1n0YI4LvdCftr_Ztlv_z_PVtAt-8U-bmjRaM0xa8Me7MbDIh65X_Sj6SUwyUCmsJSHt5Fp22bRoG0uf7E7VQQiXl2TOhskadrIvCViA9b2XDUOoejg_q0O3prGQl3A0itiWmYJ7R8tRLnJCCDL3_Rp2LO52xTv0aQ_dtVmp7jqsHgTg3Z1gJ-jX8lTXPagc1-DYaMf1gH96_jmD2y8gIdzyBDyfTwJ7BjirbWGxOP3Rnt-34hNxSXVFeNTK_z4BJV1qeQjXd9cedpg9wezwzvH-p_VmH8_-cUxuEUPKK8IE5wdSC-dYEL8lKEsjTUyAUMXMXS87E6evKowUgnLD0bUd-N1qL1yPwxF0R8XQtfklbfQmzVutBgQ_-2qaP3rHa5qsGb3dxylksjWMGdoqLxRdKRy0X1Xl1Tivjz2oWjmaDo0_iuGIPsGfDt_Megr0tQl67QUgSNED8SHxQS9FXoTS_3pY-q18DmmuZNcyoKLcBfrGT2BkYBoR1XbPuKdGZwFV

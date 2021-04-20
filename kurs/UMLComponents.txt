@@ -1,0 +1,26 @@
+@startuml
+skinparam component {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam interface {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+component [База данных] as DB
+component [Финансово-контроллинговый модуль] as FC
+component [Сервер] as Server
+
+() "LAN" as L
+() "HTTP" as H
+
+FC - H
+H - Server
+Server - L
+L - DB
+@enduml
+
+http://www.plantuml.com/plantuml/png/fL7DIiD04BxFKmmzwQ7lq2PISWWYMF0W7fParT1ajqosUX317ppLYuyW-02bLlofpJFClf6JhM1xbeMP-NxcOs1xjLFa9bK9K8yACrQaAiniDRP66uTN4AbiT4PsOlBObfRmwBnm6lf4zd9DHAKu8BAKQzfahZSJ2-CqdQfC_o_nxx1ZVk8Pl_CCUI73YbT-wXzEKDMu5stvNlX3PB7uMsvupasNlxWHUETlf2_bjORNLlHJ_aJ-bd7Xxtdf7qFW8DuAVEOtsPotDSY7cYuq0UpiOYVjxtTQBWqe6GuF0am01Z5sfITIVnVMJN0AgLGv6thQvF8NFm00

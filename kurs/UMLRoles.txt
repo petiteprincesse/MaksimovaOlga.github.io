@@ -1,0 +1,36 @@
+@startuml
+skinparam class {
+	BackgroundColor White
+	ArrowColor Black
+	BorderColor Black
+}
+class Roles as "Роли"
+
+class Users as "Пользователи"
+class Mechanisms as "Механизмы"
+
+class Accountant as "Главбух"
+class FD as "Начальник финотдела"
+class CD as "Коммерческий директор"
+
+class DB as "База данных"
+class Server as "Сервер"
+class App as "Web-приложение (модуль)"
+
+Roles<|-- Users
+Roles<|-- Mechanisms
+
+Users<|-- Accountant
+Users<|-- FD
+Users<|-- CD
+
+Mechanisms<|-- DB
+Mechanisms<|-- Server
+Mechanisms<|-- App
+
+hide members
+hide circle
+hide methods
+@enduml
+
+http://www.plantuml.com/plantuml/png/NLBDJkf055upJp5XTU-2DxWBA0sxkz4OraCxiGtz8JD55sg28d616-FEQDGtg8PgHQYlSEQDFEsqj24aJCxtyyqt9-tAY8bewdj4ZjrWmWJpgUKnAUaPQHdC6X-BS1hO_T0B1HqwRiH9goT4UAeHmqC92aDXSz64BeXEEGWzBYcJj0qlaC4tf6rIKaUIYv9wpYbr2vzulaEihY3HKgtypos71QxqI_aZ96e1CMmXHSj6BNUPFSl2kX4B8gsynvWO8z_KN2sgk86foIUywGPflBc8MbDrZSSMCYomAYh4bQTVUXwmuGP_YPgXDr6Ni4RB5qLzgcReMQCtKxDT8zFGnZk8iMkCmgBuLYthGeTSd72XTQzvD3R6_uhkJIO5D-IZ3lmWcsAp33uWAMedz0ziS5wfUVwKltXriVL_vvsENd9ZhbT9ICvfj5vR0noOZQ5l4b9x2yWqzX7zZdqKwnFYk3QdFlT76AW7onMMnoiYSa9RaYuFRFmMVm40
