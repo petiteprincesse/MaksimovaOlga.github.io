@@ -62,4 +62,148 @@ usecase Use17 as "Комнаты"
 (Use5) ..> (Use17)
 @enduml
 
+
 http://www.plantuml.com/plantuml/png/fCmn3i8m34RXtQVmKI0SWjbAJ6irhT5lHmo8krE99JlhfwTtYHJas3l5PiTJ83jBJGU_gKZT5lWusitxAVVLKkaA-Ei7fPy55KTJpFAXwJP2guJ--UlwI4vdsB8cDuFMDFysLYsvRSD0TAzJ45fPG1D4_ZZ9fkWbUe02pJQRN42M6mU5WtfHhugYg6_0f6OZMxPwXPaRzGt9gA846OKHK7mpy-RDHyfj53cnCNsdYhOyfv8VuoYAwGVdFAEI3FscWfv9qn6dKRJ6RwC6j0POm6Z4m2inoAFu7td9zuesd941wOnpUavYzU5E3TxVtQJ92NfUM9OAK4KxHLkWHrWFEFTKr2J34oITA2Li8iCAUgBA-nuT2WVE7SYPd7MMqKcfCnzUySht0DS7Ce1qJJ6s5FG4qnm4Mp9rE49oW9eN04IaGdej-eI53Wg71fcfoIP95Btk0wvJmMFwIHhizp909MKhUW7D7dyll5JqnylKjgVxkCbmwHZMLFbuFEG8uKnkfANa8E3A1KX1dqbBoRcLN581jSWP1mglFNym3orrGd8zwxsJ7IWjUIKzuAMRfx5msLAJNlJmsx7WSgWdJCPlHS6BnhZRWjFKznJ-Emb4n2_l71Ix8DtQ6ZMG0f3I8EMA7wIq99GxTEHVRVsVH6pGw_yZ31X7Zd7ZzWw5OuruQNSearXSfM_y1SO1PpmN-Vpu1Zs5kSGFoN0p2CiwUiUUFLnqCer5jniZojm-an5wkQCoOPUvXAIJJXDaF7kUSmOE7IZkLHamJfjBMT3ElpXXMh_gtsn7ZsBd9NYQ7pvrTdRsrd-ZUWp3FiEepp3kCyZBx7AfytC7JPCsSjb1hdpOy1zqdRIHzC9xZHfOcdIWeNSRDx1Hqe76NUXL_QI1JPCE1FtlRcu_uX_aNm00
+
+@startuml
+skinparam actor {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam usecase {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+left to right direction
+
+actor "Пользователь"
+
+"Отслеживание ДДС (Движения Денежных Средств)" as (Use1)
+
+usecase Use6 as "Расход на заказы поставок"
+usecase Use7 as "Доход от продажи"
+usecase Use8 as "Общая табличка"
+
+Пользователь ---> (Use1)
+
+(Use1) ..> (Use6)
+(Use1) ..> (Use7)
+(Use1) ..> (Use8)
+@enduml
+
+@startuml
+skinparam actor {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam usecase {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+left to right direction
+
+actor "Пользователь"
+
+"Отслеживание ценовой динамики" as (Use2)
+
+usecase Use9 as "Динамика расценок на поставляемые детали"
+usecase Use10 as "Динамика стоимости единиц товара"
+
+Пользователь ---> (Use2)
+
+(Use2) ..> (Use9)
+(Use2) ..> (Use10)
+@enduml
+
+@startuml
+skinparam actor {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam usecase {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+left to right direction
+
+actor "Пользователь"
+
+"Отслеживание динамики\nвостребованности товаров" as (Use3)
+
+usecase Use11 as "Рейтинговая таблица\nтоваров (помесячно)"
+usecase Use12 as "График продаж\nтоваров (помесячно)"
+
+Пользователь ---> (Use3)
+
+(Use3) ..> (Use11)
+(Use3) ..> (Use12)
+@enduml
+
+@startuml
+skinparam actor {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam usecase {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+left to right direction
+
+actor "Пользователь"
+
+"Отслеживание\nсостояния счета" as (Use4)
+
+usecase Use13 as "Счет с выбором валют\n(рубль, доллар, евро)"
+usecase Use14 as "Состояние счета\nотносительно плана"
+usecase Use15 as "Графики курса\nвалют (доллар, евро)"
+
+Пользователь ---> (Use4)
+
+(Use4) ..> (Use13)
+(Use4) ..> (Use14)
+(Use4) ..> (Use15)
+@enduml
+@startuml
+skinparam actor {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam usecase {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+left to right direction
+
+actor "Пользователь"
+
+"Обсуждение ситуации\nв рабочем чате" as (Use5)
+
+usecase Use16 as "Общий чат"
+usecase Use17 as "Комнаты"
+
+Пользователь ---> (Use5)
+
+(Use5) ..> (Use16)
+(Use5) ..> (Use17)
+@enduml

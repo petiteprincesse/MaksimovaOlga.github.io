@@ -1,0 +1,39 @@
+@startuml
+skinparam actor {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam usecase {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+left to right direction
+
+actor P1 as "Пользователь"
+actor M1 as "Программный\nмодуль"
+
+
+package SYSTEM as "Функциональные возможности модуля" {
+  usecase F1 as "Отслеживание ДДС\n(Движения Денежных Средств)"
+  usecase F2 as "Отслеживание ценовой динамики"
+  usecase F3 as "Отслеживание динамики\nвостребованности товаров"
+  usecase F4 as "Отслеживание состояния счета"
+  usecase F5 as "Обсуждение ситуации в рабочем чате"
+  P1 -- (F1)
+  P1 -- (F2)
+  P1 -- (F3)
+  P1 -- (F4)
+  P1 -- (F5)
+  (F1) -- M1
+  (F2) -- M1
+  (F3) -- M1
+  (F4) -- M1
+  (F5) -- M1
+}
+@enduml
+
+http://www.plantuml.com/plantuml/png/fCun3i8m38NXtQVm5RW1X0kmCLk9QQEcCNfsn82uEvMwTE_wwUdNkte8OgoDVAdzBP2L9OU1lvGaBnDiz7Atjibphg5q0-opGshRWfAXA8xoeqDjk6PnFTbh-WeEOzHf3YuLcgDQ9zhFFYuipl_2gLsdOI08zlcAawkaI44UFGtfKeK6AGqI4Lt49-GXGW6I6sfG93x0CJwuF7BVCFj7p9uDd8KKPFdsnhixinhV9NY5nrwUyCcO8vC5hEAaAXj-bycC1UzSCnpu7EKHs_6KEuz2bcLBet57yUlRYHbTZIulXcNh6zD7x6G51yzTfiM1m1fAUaehomTJNkOSm9c8DateW_dnP53Dyo8BcMCFopwdWxFRAU4pd_LuscJ8uPYrcf6K6TrgWshBlS5QPeH5qCnRIQpIEQqYA-LIn_Xk3GeuGZh3k8EhKNLFKltffQTvwKEORWDV5aVkS0aVMS1O4-lzC_Uy9E6QLhOGFi3oKrOZwbT4sB1WIPe2zfV4aN-9BFnInvzez5pehCg5Ws489qafUT3QRTCSdBKYq8b1DmQz6FGLQ2iXZo81MsFGZK4l1lqAy2gSJwOtlAzV
