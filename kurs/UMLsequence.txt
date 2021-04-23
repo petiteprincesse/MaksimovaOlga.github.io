@@ -50,12 +50,11 @@ server <- database : Получение актуальной информаци�
 app <- server : GET-запрос
 user <- app : Получение обновленной информации
 
-user -> app : Попытка получения таблиц ДДС/графиков динамики/результирующего отчета
+user -> app : Попытка получения таблиц ДДС/\nграфиков динамики/\nрезультирующего отчета
 app -> server : POST-запрос
 server -> database : Запрос на получение информации
 server <- database : Получение актуальной информации
 app <- server : GET-запрос
-user <- app : Получение сгенерированных таблиц ДДС/графиков динамики/файла результирующего отчета
+user <- app : Получение сгенерированных таблиц ДДС/\nграфиков динамики/\nфайла результирующего отчета
 @enduml
-
-http://www.plantuml.com/plantuml/png/vPNVYjD05CRlvoc6lIzxBo9hHRnPK53mUZOPDMoRn4cYY0XHrnLH5671owLlCBR6fat_lCAPD_ARXBIn5gjjxvP2apdpdTztvfmfFOfYeUAass7HgUU7Geak5quSAFwIjOLp-bW5YU_U2Zg8F7pYnPBTL2fuNWNQ7IXOEr2kLCt8AzQWdLY0K2_s1fH-xCNxmxaY5YSYahi1UOFe1Dqmy57ctcgCvDD4-ivEDHvxZ-InvykrLjN83-YIPbIOJpJ4iq_QlA7ChW-uY7WIISKMquJMf9HJ0ULFgAPupqgT24DMpGYY7cMGzUrtkGd6Cs3gfaFnbIxAdJh4c3NYhHiMnA_nigQv-OXQngGvR8OqiOQLgVd2wGTfl4wXUSTi4d8h7wJVktl_GGif6eoKPkOrgxOWMbXQbszB1GTCSxX-nuljGr6V3-wmEOCeHGtQd6ETry3hhT-0FHIC1fgt03RzWVxd4kPs722ytwQ0op-JDOrjHNXYgENXHkk9w29mooxUkRtIn2Ig325SxxNQlh-uRPhuIXSmSUneu0iipZbTuDCxf06O6kmSMR2rrm9c44xAK7w8_Oo6E3uE3q9kKa0_cm-83cY6Yj4RU5Zuvcjq5MQ8opee5naoq2xRrkLFRTifd64nGfRc_pEG8-cx-9lw1G00
+http://www.plantuml.com/plantuml/png/hCun3W8X44RXdbFiKHGFOVqlJ9G0C-imn1ZZtLrZGx-qh_ZoJisWrcjnBIVUeAWBWeakR-SHyasbSxn8sSlrdepSMLMU_-0BGdPUD9AEvUC6RVq1qDSqaDYIpUCY32iQ7GENGGnID-5zSzfZeqSd3eSUl-MLpKewOHJ6ztCLB-xbl_yJqIRQ20MrR2CqWHkHfDPZcH554GWjnJjuqoP7nz5REEyTzJipZ9ODsSSoWkRzUCxpEpvdn4hjsA_KwduXAXjvINeoazZToeZdGAmxbr3t9LDjcjEcV-8jfedM1H99ZF85LS8wJ7NLHiFBPeIeBo6oWVvFB_4umoOF7SM3TDER_CZp56JAcsfa_fkqfxcxePU9M0Dc95C5Pb1tR-HPBCi4pQL7aTPc7ChtTlSFofHOF0APkPQNNI5Q89Nok5GOIG11VMAXESJvvuCEfeqea2dnTDX7kU56-PrXduO9q5rW-9QFzPTRc8EFSRZwIGEzZyLM9jeHJnroWc1Sx4YAs2rJtDbU2L5df0g4nQpL-3wZhPduIWfCNAF5FcRJCTBbh__li2v3N2tk4NM0UJ5O4YGeFOhGe0XbH0G4W4la0eplt3MdGvdHDVd0KS3wL-alpD6r24Ot8HN4fS4klsw_cKIRxPXAQxupb2s_ViJFrIi0
