@@ -1,0 +1,63 @@
+@startuml
+skinparam actor {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam boundary {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam entity {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam database {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+ 
+skinparam component {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+}
+
+skinparam sequence {
+BackgroundColor White
+ArrowColor Black
+BorderColor Black
+LifeLineBorderColor Black
+}
+
+actor "Пользователь" as user
+boundary "Приложение" as app
+entity "Сервер" as server
+database "БД" as database
+
+user -> app : Попытка изменения данных
+app -> server : POST-запрос
+server -> database : Запрос на обновление информации
+server <- database : Статус запроса 
+app <- server : Ответ на POST-запрос
+app -> server : GET-запрос
+server -> database : Запрос на получение информации
+server <- database : Получение актуальной информации
+app <- server : Ответ на GET-запрос
+user <- app : Получение обновленной информации
+
+user -> app : Попытка получения таблиц ДДС/\nграфиков динамики/\nрезультирующего отчета
+app -> server : GET-запрос
+server -> database : Запрос на получение информации
+server <- database : Получение актуальной информации
+app <- server : Ответ на GET-запрос
+user <- app : Получение сгенерированных таблиц ДДС/\nграфиков динамики/\nфайла результирующего отчета
+@enduml
+
+http://www.plantuml.com/plantuml/png/xLNHQXD157sVhnZw7dmNaHeHNmeA2hxuCar6NPhCnjbTHKI8jLP4KOI2RvRymTWOistQz1Vk_97dxh3foYuLapoMGdVcphddd7ll3DbCKcNJhDyJoKva1igglbITDBRojMYhpivJ6sUcUplk8VBeMPHgSSlQ-6K8j7j0Y7PikzfM8sz4XMsR2PHzjJP2RT8eNHzTLwLgMoLwDK9POUp4_K5iO7Dj7XFzFDEcivB7hUY9tegCRfGA8z-WGvhJp7-cARv7vFmkJNY_8LKYiqHRiPWci7v8ESs0_0tK6TQJ0gS60n5c1D289e0TyV_Y41mlG5Cs7OXlT52Sb24XM4YsRZAHl2uBJ-V-4xoSa9EGcT8f2mPH_rNIBt9OdW7pNd0ISeCEqk_VU_2mXHG7ZY7D_LiHZW1QIBBAzmk419cJKFs91VTXLjO7TSZi0JI41-VtiSzBmXkjlmX7C8m6-dSWhEg3caq2Vc6IVW3CJTeDsZNJjRBktbcogdEUC4nzMAQcmtgoenCk4b--DzoluqR6VzLShoW3b3EGsAXTcz0bwfTVgbfNSAbuUg2VORClwG1_eskF3Ot1wi2U8m_2VFSW1-Xf4Sg10M92KxG43G5BxeSW_k8_8ZgcELoZNz1XWQknDcZZYOp3-qP6pbdWMppmLGQpX-qnCftydnbjQjF53-GV
